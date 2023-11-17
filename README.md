@@ -151,7 +151,7 @@ Endpoints:
 
 ## System Design
 
-![db-diagram]
+![DB Diagram](db-diagram)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
