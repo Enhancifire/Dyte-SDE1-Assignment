@@ -155,6 +155,44 @@ Endpoints:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Features Implemented
+
+**Ingestor:**
+
+- [X] Develop a mechanism to ingest logs in the provided format.
+- [X] Ensure scalability to handle high volumes of logs efficiently.
+- [X] Mitigate potential bottlenecks such as I/O operations, database write speeds, etc.
+- [X] Make sure that the logs are ingested via an HTTP server, which runs on port `3000` by default.
+
+**Query Interface:**
+
+- [X] Offer a user interface (Web UI or CLI) for full-text search across logs.
+- [X] Include filters based on:
+    - level
+    - message
+    - resourceId
+    - timestamp
+    - traceId
+    - spanId
+    - commit
+    - metadata.parentResourceId
+- [X] Aim for efficient and quick search results.
+
+**Advanced Features:**
+
+- [X] Allow combining multiple filters.
+- [X] Provide real-time log ingestion and searching capabilities.
+- [X] Distributed systems or cloud-based solutions can ensure robust scalability.
+- [ ] Implement role-based access to the query interface.
+- [ ] Implement search within specific date ranges.
+- [ ] Utilize regular expressions for search.
+
+
+## Identified Issues
+
+- Manual migration for Postgres required in docker usecase.
+- Possible bottleneck of single threaded django instance.
+- Static metadata field parameter. Adding additional data to metadata requires conversion from foreign key to BSON.
 
 <!-- CONTACT -->
 ## Contact
