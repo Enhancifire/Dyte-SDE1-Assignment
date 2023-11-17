@@ -114,9 +114,9 @@ The project can be run using a local SQLite database, or using Docker. Both meth
     git checkout docker
     ```
 
-3. Build the docker image
+3. Start DB and build docker image
     ```sh
-    docker compose up --build
+    docker compose up db && docker compose up server
     ```
 
 4. Run migrations
