@@ -80,19 +80,18 @@ WSGI_APPLICATION = "logsec.wsgi.application"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    #TODO Uncomment for Postgres with docker
-    # "default": {
-    #     "ENGINE": "django.db.backends.postgresql",
-    #     "NAME": "logger",
-    #     "USER": "user",
-    #     "PASSWORD": "password",
-    #     "HOST": "db",
-    #     "PORT": "5432",
-    # }
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "logger",
+        "USER": "user",
+        "PASSWORD": "password",
+        "HOST": "db",
+        "PORT": "5432",
     }
+    # "default": {
+    #     "ENGINE": "django.db.backends.sqlite3",
+    #     "NAME": BASE_DIR / "db.sqlite3",
+    # }
 }
 
 
