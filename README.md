@@ -108,23 +108,24 @@ The project can be run using a local SQLite database, or using Docker. Both meth
    ```sh
    git clone https://github.com/dyte-submissions/november-2023-hiring-Enhancifire.git
    ```
-
 2. Switch branch to docker
     ```sh
     git checkout docker
     ```
-
 3. Start DB and build docker image
     ```sh
-    docker compose up db && docker compose up server
+    docker compose up db -d
     ```
 
-4. Run migrations
+4. Build and Start the server
+    ```sh
+    docker compose up server --build
+    ```
+5. Run migrations
     ```sh
     docker compose exec server python manage.py migrate
     ```
-
-5. Access the server at `localhost:3000`
+6. Access the server at `localhost:3000`
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
