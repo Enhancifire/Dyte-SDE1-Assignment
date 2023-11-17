@@ -42,7 +42,7 @@
 
 [![Log Searcher 10K][product-screenshot]](https://github.com/dyte-submissions/november-2023-hiring-Enhancifire)
 
-Log Ingester and Query Tool built using Django for Dyte SDE Assessment. 
+Log Ingester and Query Tool built using Django for Dyte SDE Assessment.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -91,7 +91,7 @@ The project can be run using a local SQLite database, or using Docker. Both meth
    ```sh
     pip install -r requirements.txt
    ```
-  
+
 5. Run migrations
    ```sh
     python manage.py migrate
@@ -149,6 +149,13 @@ Endpoints:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## System Design
+
+![db-diagram]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 <!-- CONTACT -->
 ## Contact
 
@@ -175,3 +182,4 @@ Project Link: [https://github.com/dyte-submissions/november-2023-hiring-Enhancif
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/faiz-saiyad
 [product-screenshot]: images/screenshot.png
+[db-diagram]: images/db-diagram.png
