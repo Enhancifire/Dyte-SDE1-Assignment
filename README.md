@@ -182,4 +182,4 @@ Project Link: [https://github.com/dyte-submissions/november-2023-hiring-Enhancif
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/faiz-saiyad
 [product-screenshot]: images/screenshot.png
-[db-diagram]: images/db-diagram.png
+[db-diagram]: images/db_diagram.png
